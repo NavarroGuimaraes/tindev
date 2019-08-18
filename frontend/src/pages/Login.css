@@ -1,0 +1,76 @@
+.login-container {
+    height: 100%;
+    display: flex;
+    /*Alinha os itens horizontalmente ao centro*/
+    justify-content: center;
+    /*Alinha os itens verticalmente ao centro*/
+    align-items: center;
+}
+
+.login-container form {
+    width: 100%;
+    /*Caso o usuário acesse em um dispositivo com menos de 300 pixels
+    o container começará a ocupar 100% da tela*/
+    max-width: 300px;
+    display: flex;
+    /*Coloca os elemetos do form um abaixo do outro, em colunas*/
+    flex-direction: column;
+}
+
+.login-container form input {
+    margin-top: 20px;
+    border: 1px solid #DF4723;
+    border-radius: 20px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #DF4723;
+}
+
+.login-container form input::placeholder {
+    color: #E9967A;
+}
+
+.login-container form button {
+    margin-top: 10px;
+    border: 0;
+    border-radius: 20px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    text-anchor: middle;
+    outline: none;
+    position: relative;
+    z-index: 0;
+    /*background: #DF4723;*/
+    background: none;
+    font-weight: bold;
+    white-space: pre-wrap;
+    color: #FFF;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.login-container form button::before {
+    content: '';
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #DF4723;
+    border-radius: 20px;
+    transform: scale(0);
+    transition-property: transform, opacity;
+}
+
+.login-container form button:hover::before {
+    opacity: .5;
+    transform: scale(1);
+}

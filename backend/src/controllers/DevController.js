@@ -33,7 +33,7 @@ module.exports = {
         const userExists = await Dev.findOne({user : username});
         //Se o usuário já existir, retorna o usuário para o cliente
         if (userExists) {
-            return res.json({mensagem: "ESSE USUÁRIO JÁ EXISTE"});
+            return res.json(userExists);
         }
         //Pega os dados do link passado. Esses dados demoram um pouco, por isso 
         //precisamos aguardar utilizando o await
