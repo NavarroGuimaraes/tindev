@@ -1,0 +1,20 @@
+/*Estilos globais da aplicação*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    background: #FFDEAD;
+}
+
+body, input, button {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Usa a arial por padrão, se não houver a helvetica, se não a sans-serife*/
+}
