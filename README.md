@@ -1,2 +1,2 @@
 # tindev
-Projeto criado durante a semana OmniStack 8.0
+Project Created during the Omnistack 8.0
