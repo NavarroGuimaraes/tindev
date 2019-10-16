@@ -1,0 +1,170 @@
+.main-container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.main-container ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px
+}
+
+.main-container ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container ul li img {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-container ul li footer {
+    flex: 1;
+    background: #FFDEAD;
+    border: 1px solid #FFB5AD;
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+}
+
+.main-container ul li footer strong {
+    font-size: 16px;
+    color: #DF4723;
+}
+
+.main-container ul li footer p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #E9967A;
+    margin-top: 5px
+}
+
+.main-container ul li .buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.main-container ul li .buttons button {
+    height: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 0;
+    border-radius: 20px;
+    background: #BFA681;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.main-container ul li .buttons button:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+.main-container ul li .buttons button img {
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
+
+.main-container ul li .buttons button:hover img {
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+.main-container .empty div{
+    font-size: 50px;
+    color: #E9967A;
+    font-weight: bold;
+    margin-top: 300px;
+
+}
+
+.main-container .back-button-low button{
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    background-color: #DF4723;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-container .back-button-low button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    opacity: 1;
+}
+.main-container .back-button-low button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -15px;
+    transition: 0.5s;
+}
+
+.main-container .back-button-low button:hover span {
+    padding-left: 15px;
+}
+
+.main-container .back-button-low button:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+.main-container .back-button-top button{
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    margin-top: 5px;
+    margin-right: 90%;
+    background-color: #DF4723;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+    padding: 12px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.main-container .back-button-top button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    opacity: 1;
+}
+.main-container .back-button-top button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -15px;
+    transition: 0.5s;
+}
+
+.main-container .back-button-top button:hover span {
+    padding-left: 15px;
+}
+
+.main-container .back-button-top button:hover span:after {
+    opacity: 1;
+    left: 0;
+}

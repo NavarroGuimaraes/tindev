@@ -1,23 +1,11 @@
 import React from 'react';
 import './App.css';
 
+import Routes from './routes';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello, World! I'm on the browser!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
